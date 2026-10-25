@@ -1,0 +1,32 @@
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spin {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    animation: spin 3s linear infinite;
+  }
+
+  .pulse {
+    display: inline-block;
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(3); }
+  }
+</style>
+
+<h1 class="spin"><span class="pulse">bomba janusz</span></h1>
